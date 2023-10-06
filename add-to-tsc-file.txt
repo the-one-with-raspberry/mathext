@@ -1,0 +1,2 @@
+function expose(){for(const k in exports){if(k==expose){continue;}Math[k]=exports[k]}}
+exports.expose = expose;
