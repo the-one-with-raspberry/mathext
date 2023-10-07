@@ -25,7 +25,11 @@ const MathExt = require('@berriz44/mathext')
 
 ## `MathExt.numberRow: number | string | Array<number>`
 
-### parameter list:
+### description:
+
+makes a row of numbers
+
+### arguments:
 
 1. `end: number` | to what number should it count
 2. `start: number` | what number should it start with. defaults to 1.
@@ -62,3 +66,79 @@ MathExt.numberRow(10, 1, 1, 0)
 // 12345678910
 typeof MathExt.numberRow(10, 1, 1, 0)
 // 'number'
+```
+
+## `MathExt.isPositive: boolean`
+
+### description:
+
+says if a number is positive or not
+
+### arguments:
+
+`i: number` | which number to know whether it is positive or negative
+
+### returns:
+
+`true` if `i` is positive, `false` if `i` is negative
+
+### examples:
+
+```js
+MathExt.isPositive(77)
+// true
+```
+
+```js
+MathExt.isPositive(-24)
+// false
+```
+
+### examples:
+
+## `MathExt.infinity: number`
+
+### description:
+
+returns infinity or negative infinity based on a parameter
+
+### arguments:
+
+`side: number` | any number. affects the return value.
+
+### returns:
+
+`infinity` if `side` is a positive number and `-infinity` if `side` is a negative number
+
+### examples:
+
+```js
+MathExt.infinity(1)
+// Infinity
+```
+
+```js
+MathExt.infinity(-1)
+// -Infinity
+```
+
+## `MathExt.turnStringArrayToNumberArray: Array<number>`
+
+### description:
+
+turns a string array into a number array
+
+### arguments:
+
+`arr: Array<string>` | the array to convert
+
+### returns:
+
+an `Array<number>` with numbers from the `arr` parameter
+
+### examples:
+
+```js
+MathExt.turnStringArrayToNumberArray(["10", "4", "9", "fffg"])
+// [10, 4, 9, NaN]
+```
