@@ -1,12 +1,13 @@
 {
   "name": "@berriz44/mathext",
-  "version": "1.0.3",
+  "version": "1.0.3.1",
   "description": "",
   "main": "mod.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && more add-to-tsc-file.txt >> mod.js",
-    "prepublish": "npm run build"
+    "prepack": "npm run build",
+    "pack": "npm pack"
   },
   "publishConfig": {
     "access": "public"

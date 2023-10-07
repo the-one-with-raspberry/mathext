@@ -5,6 +5,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/the-one-with-raspberry/mathext)](https://github.com/the-one-with-raspberry/mathext/issues)
 [![npm](https://img.shields.io/npm/v/%40berriz44%2Fmathext)](https://www.npmjs.com/package/@berriz44/mathext)
 [![GitHub Repo stars](https://img.shields.io/github/stars/the-one-with-raspberry/mathext)](https://github.com/the-one-with-raspberry/mathext)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/%40berriz44%2Fmathext)](https://bundlephobia.com/package/@berriz44/mathext@1.0.3)
 
 
 `mathext` is an extension of the `math` interface in JavaScript.
